@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var port = process.env.PORT || 3000;
 
-app.use(express.static('public'))
+//app.use(express.static('public'))
 
 app.get('/', function(req, res) {
   res.sendFile( 'listoflinks.txt', function ( line ) { res.send( line ); } );
